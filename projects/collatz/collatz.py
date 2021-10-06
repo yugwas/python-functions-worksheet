@@ -1,14 +1,16 @@
 
 def collatz(number):
-    for i in range(number):
-        if i % 2 == 0:
-            number = number % 2
-            return(number)
-        else:
-            number = 3 * number + 1
-            return(number)
+    if number % 2 == 0:
+        number = (number//2)
+        return(number)
+    elif number % 2 == 1:
+        number = 3 * number + 1
+        return(number)
 
-        
+user_input = input("Give me a number: ")
+while user_input != 1:
+    user_input = collatz(int(user_input))
+
 
 #The Collatz Sequence  
 
