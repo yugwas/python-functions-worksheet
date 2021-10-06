@@ -1,0 +1,1 @@
+Write a function called box that will output boxes given a height and width. Once you've finished writing your function, copy and paste the following code after it and make sure it works with the function you wrote:

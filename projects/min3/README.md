@@ -1,0 +1,3 @@
+Write a function called min3 that will take three numbers as parameters and return the smallest value. If more than one number tied for smallest, still return that smallest number. Use a proper if/elif/else chain. Once you've finished writing your function, copy/paste the following code and make sure that it runs against the function you created:
+
+The function should return the value, not print the value. Also, while there is a min function built into Python, don't use it. Please use if statements and practice creating it yourself. Leave the testing statements in the program so the instructor can check the program. If you also get None to print out, then chances are you are using print instead of return in your function.
