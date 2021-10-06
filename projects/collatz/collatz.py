@@ -1,15 +1,20 @@
 
-def collatz(user_input):
-    user_input = int(input("Please enter a number: "))
-    while user_input != 1:
-        if user_input % 2 == 0:
-            user_input = (user_input//2)
-            return(user_input)
-        elif user_input % 2 == 1:
-            user_input = 3 * user_input + 1
-            return(user_input)
+def collatz(number):
+    while number != 1:
+        if number % 2 == 1:
+            number = 3 * number + 1
+            print(number)
+        elif number % 2 == 0:
+            number = (number//2)
+            print(number)
+        else:
+            print("Enter a valid input.")
+        continue
 
 
+
+
+collatz(3)
 
 #The Collatz Sequence  
 
