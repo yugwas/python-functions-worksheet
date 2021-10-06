@@ -1,15 +1,14 @@
 
-def collatz(number):
-    if number % 2 == 0:
-        number = (number//2)
-        return(number)
-    elif number % 2 == 1:
-        number = 3 * number + 1
-        return(number)
+def collatz(user_input):
+    user_input = int(input("Please enter a number: "))
+    while user_input != 1:
+        if user_input % 2 == 0:
+            user_input = (user_input//2)
+            return(user_input)
+        elif user_input % 2 == 1:
+            user_input = 3 * user_input + 1
+            return(user_input)
 
-user_input = input("Give me a number: ")
-while user_input != 1:
-    user_input = collatz(int(user_input))
 
 
 #The Collatz Sequence  
@@ -26,8 +25,6 @@ while user_input != 1:
 
 
 # Uncomment this code to test your function
-print(collatz(3))
-
 
 '''The output of this program could look something like this:
 
